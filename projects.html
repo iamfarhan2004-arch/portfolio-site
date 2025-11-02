@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - MD Farhan Raza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.3/echarts.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-text { font-family: 'Playfair Display', serif; }
+        .timeline-item { transition: all 0.3s ease; }
+        .timeline-item:hover { transform: translateY(-4px); }
+        .filter-btn { transition: all 0.3s ease; }
+        .filter-btn.active { background: #2dd4bf; color: white; }
+        .project-card { transition: all 0.3s ease; }
+        .project-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #2dd4bf; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="hero-text text-xl font-bold text-slate-800">Farhan Raza</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-slate-600 hover:text-teal-500 font-medium">Home</a>
+                    <a href="projects.html" class="nav-link text-teal-500 font-medium">Projects</a>
+                    <a href="skills.html" class="nav-link text-slate-600 hover:text-teal-500 font-medium">Skills</a>
+                    <a href="contact.html" class="nav-link text-slate-600 hover:text-teal-500 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-slate-800 to-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="hero-text text-5xl font-bold text-white mb-6">My Projects</h1>
+            <p class="text-slate-300 text-xl max-w-3xl mx-auto">
+                Explore my journey through data analytics, from foundational projects to advanced AI applications. 
+                Each project represents a step in my professional growth and technical expertise.
+            </p>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="hero-text text-4xl font-bold text-slate-800 mb-4">Professional Timeline</h2>
+                <p class="text-slate-600 text-lg">My progression from education to industry certifications</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-teal-200 h-full"></div>
+                
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- 2021 - Matriculation -->
+                    <div class="timeline-item relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                                <h3 class="font-semibold text-slate-800 mb-2">Matriculation</h3>
+                                <p class="text-slate-600 text-sm">Completed secondary education from C.B.S.E Jharkhand</p>
+                                <span class="text-teal-500 text-sm font-medium">2021</span>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-teal-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                    
+                    <!-- 2023 - Intermediate -->
+                    <div class="timeline-item relative flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="w-1/2 pl-8">
+                            <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                                <h3 class="font-semibold text-slate-800 mb-2">Intermediate Education</h3>
+                                <p class="text-slate-600 text-sm">Completed higher secondary from J.A.C</p>
+                                <span class="text-orange-500 text-sm font-medium">2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 2025 - Data Analytics Certification -->
+                    <div class="timeline-item relative flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="bg-teal-50 p-6 rounded-xl border border-teal-200">
+                                <h3 class="font-semibold text-slate-800 mb-2">Data Analytics Certification</h3>
+                                <p class="text-slate-600 text-sm">Certified in Data Analytics from Physics Wallah</p>
+                                <span class="text-teal-500 text-sm font-medium">2025</span>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                    
+                    <!-- 2025 - Industry Simulations -->
+                    <div class="timeline-item relative flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-lg"></div>
+                        <div class="w-1/2 pl-8">
+                            <div class="bg-blue-50 p-6 rounded-xl border border-blue-200">
+                                <h3 class="font-semibold text-slate-800 mb-2">Industry Certifications</h3>
+                                <p class="text-slate-600 text-sm">Completed job simulations with Deloitte, Quantium, BCG X, and Tata</p>
+                                <span class="text-blue-500 text-sm font-medium">2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="hero-text text-4xl font-bold text-slate-800 mb-4">Project Portfolio</h2>
+                <p class="text-slate-600 text-lg mb-8">Detailed breakdown of my data analytics projects</p>
+                
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="filter-btn active px-6 py-2 rounded-full border border-slate-300 font-medium" data-filter="all">
+                        All Projects
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-slate-300 font-medium" data-filter="forensic">
+                        Forensic Analytics
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-slate-300 font-medium" data-filter="ai">
+                        AI & ML
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-slate-300 font-medium" data-filter="customer">
+                        Customer Analytics
+                    </button>
+                    <button class="filter-btn px-6 py-2 rounded-full border border-slate-300 font-medium" data-filter="visualization">
+                        Visualization
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Application Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="hero-text text-4xl font-bold text-slate-800 mb-4">Skills in Action</h2>
+                <p class="text-slate-600 text-lg">How I apply my technical skills across different projects</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-slate-800 mb-6">Technology Stack</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-slate-700">Python Analytics</span>
+                                <span class="text-teal-500 font-medium">90%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-3">
+                                <div class="bg-teal-500 h-3 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-slate-700">SQL & Databases</span>
+                                <span class="text-orange-500 font-medium">85%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-3">
+                                <div class="bg-orange-500 h-3 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-slate-700">Data Visualization</span>
+                                <span class="text-blue-500 font-medium">88%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-3">
+                                <div class="bg-blue-500 h-3 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="font-medium text-slate-700">AI & Machine Learning</span>
+                                <span class="text-purple-500 font-medium">75%</span>
+                            </div>
+                            <div class="w-full bg-slate-200 rounded-full h-3">
+                                <div class="bg-purple-500 h-3 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <h3 class="font-semibold text-slate-800 mb-6 text-center">Project Distribution</h3>
+                    <div id="project-distribution-chart" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 MD Farhan Raza. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Projects page specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeProjectsPage();
+            initializeProjectDistributionChart();
+        });
+
+        function initializeProjectsPage() {
+            renderProjects();
+            initializeFilters();
+        }
+
+        function renderProjects(filter = 'all') {
+            const grid = document.getElementById('projects-grid');
+            const projects = window.portfolioJS ? window.portfolioJS.projectsData : [];
+            
+            let filteredProjects = projects;
+            if (filter !== 'all') {
+                filteredProjects = projects.filter(project => project.category === filter);
+            }
+            
+            grid.innerHTML = filteredProjects.map(project => `
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-slate-200" data-category="${project.category}">
+                    <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-xs font-medium">${project.company}</span>
+                            <span class="text-slate-500 text-sm">${project.year}</span>
+                        </div>
+                        <h3 class="font-semibold text-slate-800 mb-2">${project.title}</h3>
+                        <p class="text-slate-600 text-sm mb-4">${project.description}</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            ${project.technologies.map(tech => `
+                                <span class="bg-slate-100 text-slate-700 px-2 py-1 rounded text-xs font-medium">${tech}</span>
+                            `).join('')}
+                        </div>
+                        <button onclick="showProjectDetails(${project.id})" class="text-teal-500 hover:text-teal-600 font-medium text-sm">Learn More →</button>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Animate cards
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach((card, index) => {
+                anime({
+                    targets: card,
+                    translateY: [30, 0],
+                    opacity: [0, 1],
+                    delay: index * 100,
+                    duration: 800,
+                    easing: 'easeOutExpo'
+                });
+            });
+        }
+
+        function initializeFilters() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Update active state
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter projects
+                    const filter = this.dataset.filter;
+                    renderProjects(filter);
+                });
+            });
+        }
+
+        function initializeProjectDistributionChart() {
+            const chartDom = document.getElementById('project-distribution-chart');
+            if (!chartDom) return;
+            
+            const myChart = echarts.init(chartDom);
+            
+            const option = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{a} <br/>{b}: {c} ({d}%)'
+                },
+                series: [{
+                    name: 'Projects',
+                    type: 'pie',
+                    radius: '70%',
+                    center: ['50%', '50%'],
+                    data: [
+                        { value: 2, name: 'AI & ML', itemStyle: { color: '#8b5cf6' } },
+                        { value: 1, name: 'Forensic Analytics', itemStyle: { color: '#2dd4bf' } },
+                        { value: 1, name: 'Customer Analytics', itemStyle: { color: '#f97316' } },
+                        { value: 1, name: 'Data Visualization', itemStyle: { color: '#3b82f6' } }
+                    ],
+                    emphasis: {
+                        itemStyle: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    },
+                    animationType: 'scale',
+                    animationEasing: 'elasticOut',
+                    animationDelay: function (idx) {
+                        return Math.random() * 200;
+                    }
+                }]
+            };
+            
+            myChart.setOption(option);
+            
+            // Responsive chart
+            window.addEventListener('resize', function() {
+                myChart.resize();
+            });
+        }
+
+        function showProjectDetails(projectId) {
+            // This would typically open a modal or navigate to a detail page
+            const projects = window.portfolioJS ? window.portfolioJS.projectsData : [];
+            const project = projects.find(p => p.id === projectId);
+            
+            if (project) {
+                alert(`Project Details:\n\nTitle: ${project.title}\nCompany: ${project.company}\nDescription: ${project.description}\nTechnologies: ${project.technologies.join(', ')}`);
+            }
+        }
+    </script>
+</body>
+</html>

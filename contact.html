@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MD Farhan Raza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .hero-text { font-family: 'Playfair Display', serif; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #2dd4bf; transition: width 0.3s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .contact-card { transition: all 0.3s ease; }
+        .contact-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .form-input { transition: all 0.3s ease; }
+        .form-input:focus { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(45, 212, 191, 0.1); }
+        .social-link { transition: all 0.3s ease; }
+        .social-link:hover { transform: translateY(-2px) scale(1.05); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-700">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="hero-text text-xl font-bold text-slate-800">Farhan Raza</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link text-slate-600 hover:text-teal-500 font-medium">Home</a>
+                    <a href="projects.html" class="nav-link text-slate-600 hover:text-teal-500 font-medium">Projects</a>
+                    <a href="skills.html" class="nav-link text-slate-600 hover:text-teal-500 font-medium">Skills</a>
+                    <a href="contact.html" class="nav-link text-teal-500 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-slate-800 to-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="hero-text text-5xl font-bold text-white mb-6">Let's Connect</h1>
+            <p class="text-slate-300 text-xl max-w-3xl mx-auto">
+                Ready to collaborate on data-driven projects? I'm always interested in discussing 
+                new opportunities and challenges in the world of data analytics.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="hero-text text-4xl font-bold text-slate-800 mb-4">Get In Touch</h2>
+                <p class="text-slate-600 text-lg">Multiple ways to reach out and start a conversation</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="contact-card bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                    <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-slate-800 mb-2">Email</h3>
+                    <p class="text-slate-600 text-sm mb-3">mdfarhan180604@gmail.com</p>
+                    <button onclick="window.location.href='mailto:mdfarhan180604@gmail.com'" class="text-teal-500 hover:text-teal-600 font-medium text-sm">
+                        Send Email →
+                    </button>
+                </div>
+                
+                <div class="contact-card bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-slate-800 mb-2">Phone</h3>
+                    <p class="text-slate-600 text-sm mb-3">+91 9801549304</p>
+                    <button onclick="window.location.href='tel:+919801549304'" class="text-orange-500 hover:text-orange-600 font-medium text-sm">
+                        Call Now →
+                    </button>
+                </div>
+                
+                <div class="contact-card bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-slate-800 mb-2">Location</h3>
+                    <p class="text-slate-600 text-sm mb-3">Jamshedpur, Jharkhand</p>
+                    <button onclick="showLocation()" class="text-blue-500 hover:text-blue-600 font-medium text-sm">
+                        View Map →
+                    </button>
+                </div>
+                
+                <div class="contact-card bg-slate-50 p-6 rounded-2xl border border-slate-200 text-center">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-slate-800 mb-2">Availability</h3>
+                    <p class="text-slate-600 text-sm mb-3">Open to opportunities</p>
+                    <button onclick="showAvailability()" class="text-purple-500 hover:text-purple-600 font-medium text-sm">
+                        Check Status →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="hero-text text-4xl font-bold text-slate-800 mb-4">Send a Message</h2>
+                <p class="text-slate-600 text-lg">Have a project in mind? Let's discuss how I can help</p>
+            </div>
+            
+            <div class="bg-white p-8 lg:p-12 rounded-2xl border border-slate-200 shadow-lg">
+                <form id="contact-form" onsubmit="handleContactForm(event)" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-slate-700 mb-2">Company (Optional)</label>
+                            <input type="text" id="company" name="company" 
+                                   class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-slate-700 mb-2">Subject</label>
+                            <select id="subject" name="subject" required 
+                                    class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent">
+                                <option value="">Select a subject</option>
+                                <option value="freelance">Freelance Project</option>
+                                <option value="fulltime">Full-time Opportunity</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="6" required 
+                                  class="form-input w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent" 
+                                  placeholder="Tell me about your project, goals, and how I can help..."></textarea>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" id="privacy" name="privacy" required 
+                               class="w-4 h-4 text-teal-600 border-slate-300 rounded focus:ring-teal-500">
+                        <label for="privacy" class="ml-2 text-sm text-slate-600">
+                            I agree to the <a href="#" class="text-teal-600 hover:text-teal-700">privacy policy</a> and terms of service
+                        </label>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button type="submit" 
+                                class="bg-teal-500 hover:bg-teal-600 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-12">
+                <h2 class="hero-text text-4xl font-bold text-slate-800 mb-4">Connect With Me</h2>
+                <p class="text-slate-600 text-lg">Follow my professional journey and latest insights</p>
+            </div>
+            
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="social-link w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                
+                <a href="#" class="social-link w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-slate-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                
+                <a href="#" class="social-link w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                    </svg>
+                </a>
+                
+                <a href="#" class="social-link w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center">
+                    <svg class="w-8 h-8 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z.017 0z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 MD Farhan Raza. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Contact page specific functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeContactPage();
+        });
+
+        function initializeContactPage() {
+            animateContactCards();
+            initializeFormValidation();
+        }
+
+        function animateContactCards() {
+            const cards = document.querySelectorAll('.contact-card');
+            cards.forEach((card, index) => {
+                anime({
+                    targets: card,
+                    translateY: [30, 0],
+                    opacity: [0, 1],
+                    delay: index * 100,
+                    duration: 800,
+                    easing: 'easeOutExpo'
+                });
+            });
+        }
+
+        function initializeFormValidation() {
+            const form = document.getElementById('contact-form');
+            const inputs = form.querySelectorAll('input, textarea, select');
+            
+            inputs.forEach(input => {
+                input.addEventListener('blur', validateField);
+                input.addEventListener('input', clearError);
+            });
+        }
+
+        function validateField(event) {
+            const field = event.target;
+            const value = field.value.trim();
+            
+            // Remove existing error styling
+            field.classList.remove('border-red-500', 'border-green-500');
+            
+            // Validate based on field type
+            let isValid = true;
+            let errorMessage = '';
+            
+            if (field.hasAttribute('required') && !value) {
+                isValid = false;
+                errorMessage = 'This field is required';
+            } else if (field.type === 'email' && value && !isValidEmail(value)) {
+                isValid = false;
+                errorMessage = 'Please enter a valid email address';
+            }
+            
+            // Apply styling and show error
+            if (!isValid && value) {
+                field.classList.add('border-red-500');
+                showFieldError(field, errorMessage);
+            } else if (isValid && value) {
+                field.classList.add('border-green-500');
+                clearFieldError(field);
+            }
+            
+            return isValid;
+        }
+
+        function clearError(event) {
+            const field = event.target;
+            field.classList.remove('border-red-500');
+            clearFieldError(field);
+        }
+
+        function showFieldError(field, message) {
+            // Remove existing error message
+            clearFieldError(field);
+            
+            // Add error message
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'text-red-500 text-sm mt-1 field-error';
+            errorDiv.textContent = message;
+            field.parentNode.appendChild(errorDiv);
+        }
+
+        function clearFieldError(field) {
+            const errorDiv = field.parentNode.querySelector('.field-error');
+            if (errorDiv) {
+                errorDiv.remove();
+            }
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function showLocation() {
+            alert('Location: Jamshedpur, Jharkhand, India\n\nI am based in Jamshedpur and available for remote work opportunities worldwide.');
+        }
+
+        function showAvailability() {
+            alert('Current Status: Available for new opportunities\n\n• Open to freelance projects\n• Available for full-time positions\n• Interested in collaborative work\n• Response time: Within 24 hours');
+        }
+
+        // Enhanced form submission
+        function handleContactForm(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            // Validate all fields
+            const inputs = form.querySelectorAll('input, textarea, select');
+            let isFormValid = true;
+            
+            inputs.forEach(input => {
+                if (!validateField({ target: input })) {
+                    isFormValid = false;
+                }
+            });
+            
+            if (!isFormValid) {
+                showNotification('Please fix the errors in the form', 'error');
+                return;
+            }
+            
+            // Simulate form submission
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Collect form data
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            console.log('Form submitted:', data);
+            
+            setTimeout(() => {
+                showNotification('Message sent successfully! I\'ll get back to you within 24 hours.', 'success');
+                form.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                
+                // Clear all field styling
+                inputs.forEach(input => {
+                    input.classList.remove('border-green-500', 'border-red-500');
+                    clearFieldError(input);
+                });
+            }, 2000);
+        }
+
+        // Enhanced notification system
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            const bgColor = type === 'success' ? 'bg-green-500' : type === 'error' ? 'bg-red-500' : 'bg-blue-500';
+            
+            notification.className = `fixed top-20 right-4 p-4 rounded-lg shadow-lg z-50 ${bgColor} text-white max-w-sm`;
+            notification.innerHTML = `
+                <div class="flex items-center">
+                    <div class="flex-1">
+                        <p class="text-sm font-medium">${message}</p>
+                    </div>
+                    <button onclick="this.parentElement.parentElement.remove()" class="ml-4 text-white hover:text-gray-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            anime({
+                targets: notification,
+                translateX: [300, 0],
+                opacity: [0, 1],
+                duration: 300,
+                easing: 'easeOutExpo'
+            });
+            
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    anime({
+                        targets: notification,
+                        translateX: [0, 300],
+                        opacity: [1, 0],
+                        duration: 300,
+                        easing: 'easeInExpo',
+                        complete: () => {
+                            document.body.removeChild(notification);
+                        }
+                    });
+                }
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
